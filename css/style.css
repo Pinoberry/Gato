@@ -1,0 +1,96 @@
+/* Estilos generales del cuerpo */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Contenedor principal del juego */
+.contenedor-juego {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el mensaje de estado del juego */
+.estado-juego {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #3498db; /* Un azul vibrante */
+}
+
+/* Estilos para el tablero de Tic-Tac-Toe */
+.tablero-gato {
+  display: grid; /* Usamos CSS Grid para crear la cuadrícula */
+  grid-template-columns: repeat(3, 100px); /* 3 columnas de 100px cada una */
+  grid-template-rows: repeat(3, 100px); /* 3 filas de 100px cada una */
+  gap: 5px; /* Espacio entre las celdas */
+  width: 315px; /* Ancho total del tablero (3*100px + 2*5px de gap) */
+  height: 315px; /* Alto total del tablero */
+  margin: 0 auto 30px auto; /* Centrar horizontalmente y añadir margen abajo */
+  border: 2px solid #34495e; /* Borde oscuro para el tablero */
+  border-radius: 5px;
+  background-color: #ecf0f1; /* Fondo claro para el tablero */
+}
+
+/* Estilos para cada celda individual */
+.celda {
+  width: 100px;
+  height: 100px;
+  background-color: #fdfdfd;
+  border: 1px solid #bdc3c7; /* Borde suave entre celdas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em; /* Tamaño grande para X y O */
+  font-weight: bold;
+  cursor: pointer; /* Indica que la celda es clickable */
+  transition: background-color 0.2s ease-in-out; /* Transición suave al pasar el ratón */
+}
+
+.celda:hover {
+  background-color: #e0e0e0; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para cuando una celda ya está ocupada */
+.celda.ocupada {
+  cursor: not-allowed; /* Cambia el cursor para indicar que no se puede clickear */
+}
+
+/* Colores específicos para las marcas X y O */
+.celda.x {
+  color: #e74c3c; /* Rojo para X */
+}
+
+.celda.o {
+  color: #27ae60; /* Verde para O */
+}
+
+/* Estilos para el botón de reiniciar */
+#reiniciarJuego {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #3498db; /* Azul para el botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#reiniciarJuego:hover {
+  background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+}
