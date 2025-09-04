@@ -1,4 +1,4 @@
-/* Estilos generales del cuerpo */
+
 body {
   font-family: "Arial", sans-serif;
   display: flex;
@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* Contenedor principal del juego */
+
 .contenedor-juego {
   background-color: #fff;
   padding: 30px;
@@ -24,66 +24,65 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Estilos para el mensaje de estado del juego */
+
 .estado-juego {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 25px;
-  color: #3498db; /* Un azul vibrante */
+  color: #3498db; 
 }
 
-/* Estilos para el tablero de Tic-Tac-Toe */
+
 .tablero-gato {
-  display: grid; /* Usamos CSS Grid para crear la cuadrícula */
-  grid-template-columns: repeat(3, 100px); /* 3 columnas de 100px cada una */
-  grid-template-rows: repeat(3, 100px); /* 3 filas de 100px cada una */
-  gap: 5px; /* Espacio entre las celdas */
-  width: 315px; /* Ancho total del tablero (3*100px + 2*5px de gap) */
-  height: 315px; /* Alto total del tablero */
-  margin: 0 auto 30px auto; /* Centrar horizontalmente y añadir margen abajo */
-  border: 2px solid #34495e; /* Borde oscuro para el tablero */
+  display: grid; 
+  grid-template-columns: repeat(3, 100px); 
+  grid-template-rows: repeat(3, 100px); 
+  gap: 5px; 
+  width: 315px;  
+  height: 315px; 
+  margin: 0 auto 30px auto; 
+  border: 2px solid #34495e; 
   border-radius: 5px;
-  background-color: #ecf0f1; /* Fondo claro para el tablero */
-}
+  background-color: #ecf0f1; 
 
-/* Estilos para cada celda individual */
+
 .celda {
   width: 100px;
   height: 100px;
   background-color: #fdfdfd;
-  border: 1px solid #bdc3c7; /* Borde suave entre celdas */
+  border: 1px solid #bdc3c7; 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em; /* Tamaño grande para X y O */
+  font-size: 3em; 
   font-weight: bold;
-  cursor: pointer; /* Indica que la celda es clickable */
-  transition: background-color 0.2s ease-in-out; /* Transición suave al pasar el ratón */
+  cursor: pointer; 
+  transition: background-color 0.2s ease-in-out; 
 }
 
 .celda:hover {
-  background-color: #e0e0e0; /* Cambio de color al pasar el ratón */
+  background-color: #e0e0e0; 
 }
 
-/* Estilos para cuando una celda ya está ocupada */
+
 .celda.ocupada {
-  cursor: not-allowed; /* Cambia el cursor para indicar que no se puede clickear */
+  cursor: not-allowed; 
 }
 
-/* Colores específicos para las marcas X y O */
+
 .celda.x {
-  color: #e74c3c; /* Rojo para X */
+  color: #e74c3c; 
 }
 
 .celda.o {
-  color: #27ae60; /* Verde para O */
+  color: #27ae60;
 }
 
-/* Estilos para el botón de reiniciar */
+
 #reiniciarJuego {
   padding: 12px 25px;
   font-size: 1.1em;
-  background-color: #3498db; /* Azul para el botón */
+  background-color: #3498db; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -92,5 +91,5 @@ h1 {
 }
 
 #reiniciarJuego:hover {
-  background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+  background-color: #2980b9; 
 }
